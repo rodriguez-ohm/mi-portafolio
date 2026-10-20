@@ -1,1 +1,46 @@
 @import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-*: initial;
+
+  --color-page: #f1ede8;
+  --color-surface: #ffffff;
+  --color-ink: #2a1418;
+  --color-ink-muted: #5e4c4f;
+  --color-accent: #2f6f64;
+  --color-on-accent: #ffffff;
+  --color-brand: #5a1a26;
+  --color-on-brand: #f1ede8;
+  --color-on-brand-muted: #dcc6c9;
+  --color-brand-accent: #8fd0c3;
+  --color-on-brand-accent: #2a1418;
+  --color-line: #d9cfc9;
+  --color-line-strong: #8c7b7d;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --color-page: #160c0e;
+  --color-surface: #231417;
+  --color-ink: #f1e9e6;
+  --color-ink-muted: #b9a7a9;
+  --color-accent: #7cc4b6;
+  --color-on-accent: #160c0e;
+  --color-brand: #231417;
+  --color-on-brand: #f1e9e6;
+  --color-on-brand-muted: #b9a7a9;
+  --color-brand-accent: #7cc4b6;
+  --color-on-brand-accent: #160c0e;
+  --color-line: #3a2a2d;
+  --color-line-strong: #7d6a6c;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-page);
+    color: var(--color-ink);
+  }
+}
