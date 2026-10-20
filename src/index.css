@@ -18,6 +18,13 @@
   --color-on-brand-accent: #2a1418;
   --color-line: #d9cfc9;
   --color-line-strong: #8c7b7d;
+  --font-*: initial;
+  --font-sans: 'Atkinson Hyperlegible Next', system-ui, sans-serif;
+  --font-display: 'Young Serif', Georgia, serif;
+  --font-mono: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+}
+
+.dark {
 }
 
 .dark {
