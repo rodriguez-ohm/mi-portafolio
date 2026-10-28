@@ -1,8 +1,21 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { navLinks } from '../../data/navigation'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    if (!isOpen) return
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === 'Escape') {
+        setIsOpen(false)
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [isOpen])
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-line bg-page">
