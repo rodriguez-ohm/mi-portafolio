@@ -5,6 +5,7 @@ type ButtonProps = {
   variant?: 'primary' | 'secondary'
   surface?: 'page' | 'brand'
   href?: string
+  download?: boolean
   onClick?: () => void
 }
 
@@ -24,12 +25,19 @@ const styles = {
   },
 }
 
-function Button({ children, variant = 'primary', surface = 'page', href, onClick }: ButtonProps) {
+function Button({
+  children,
+  variant = 'primary',
+  surface = 'page',
+  href,
+  download,
+  onClick,
+}: ButtonProps) {
   const className = `${base} ${styles[surface][variant]}`
 
   if (href) {
     return (
-      <a href={href} className={className}>
+      <a href={href} download={download} className={className}>
         {children}
       </a>
     )

@@ -91,3 +91,53 @@
     outline-offset: 2px;
   }
 }
+
+/* Gráfico del Hero: la señal viaja por las pistas y enciende la interfaz */
+.signal-pulse {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .signal-pulse {
+    opacity: 1;
+    stroke-dasharray: 8 200;
+    stroke-dashoffset: 8;
+    animation: signal 3s ease-in infinite;
+  }
+
+  .signal-glow {
+    opacity: 0.55;
+    animation: glow 3s ease-out infinite;
+  }
+
+  .signal-delay-1 {
+    animation-delay: 0.4s;
+  }
+
+  .signal-delay-2 {
+    animation-delay: 0.8s;
+  }
+}
+
+@keyframes signal {
+  0% {
+    stroke-dashoffset: 8;
+  }
+  50%,
+  100% {
+    stroke-dashoffset: -100;
+  }
+}
+
+@keyframes glow {
+  0%,
+  45% {
+    opacity: 0.55;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.55;
+  }
+}
