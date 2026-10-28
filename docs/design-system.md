@@ -101,8 +101,9 @@ relacionados están dos elementos, menos espacio hay entre ellos.
 
 - Secciones en escritorio con estructura de ficha técnica:
   etiqueta en las columnas 1–3 y contenido en las 4–12.
-- El Hero es la excepción: texto en las columnas 1–7 y gráfico
-  "del circuito a la interfaz" en las 8–12.
+- El Hero es la excepción: texto en las columnas 1–6 y gráfico
+  "del circuito a la interfaz" en las 7–12. Se pasó de 7/5 a 6/6 al
+  programarlo, para equilibrar el peso visual del nombre y el gráfico.
 
 ## Decisiones por sección
 

@@ -1,11 +1,13 @@
 import type { SocialLink } from '../types/social'
 
-export const email = 'isleniyulianarodriguez@gmail.com.com'
+export const email = 'isleniyulianarodriguez@gmail.com'
+
+export const cvUrl = '/cv-isleni-rodriguez.pdf'
 
 export const socialLinks: SocialLink[] = [
   {
     label: 'LinkedIn',
-    url: 'www.linkedin.com/in/isleni-rodriguez01',
+    url: 'https://www.linkedin.com/in/isleni-rodriguez01',
     icon: '/icons/linkedin.svg',
   },
   {
@@ -15,7 +17,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     label: 'CV',
-    url: '/cv-isleni-rodriguez.pdf',
+    url: cvUrl,
     icon: '/icons/file.svg',
   },
 ]
