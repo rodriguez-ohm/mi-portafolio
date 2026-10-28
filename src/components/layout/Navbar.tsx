@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { navLinks } from '../../data/navigation'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const buttonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     if (!isOpen) return
@@ -10,6 +11,7 @@ function Navbar() {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === 'Escape') {
         setIsOpen(false)
+        buttonRef.current?.focus()
       }
     }
 
@@ -42,6 +44,7 @@ function Navbar() {
           </ul>
 
           <button
+            ref={buttonRef}
             type="button"
             aria-label="Menú"
             aria-expanded={isOpen}
