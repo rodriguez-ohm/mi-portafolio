@@ -1,5 +1,12 @@
+import Navbar from './components/layout/Navbar'
+
 function App() {
-  return <main></main>
+  return (
+    <>
+      <Navbar />
+      <main className="pt-16"></main>
+    </>
+  )
 }
 
 export default App
