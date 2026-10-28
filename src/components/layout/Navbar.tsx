@@ -56,6 +56,7 @@ function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
+                  onClick={() => setIsOpen(false)}
                   className="block rounded-sm py-3 font-mono text-label text-ink-muted uppercase hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   {link.label}
