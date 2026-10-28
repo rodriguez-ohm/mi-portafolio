@@ -23,10 +23,7 @@ function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-line bg-page">
       <nav aria-label="Principal">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
-          <a
-            href="#home"
-            className="rounded-sm font-display text-card text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-          >
+          <a href="#home" className="rounded-sm font-display text-card text-ink focus-ring">
             isleni ro
           </a>
 
@@ -35,7 +32,7 @@ function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="rounded-sm font-mono text-label text-ink-muted uppercase hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  className="rounded-sm font-mono text-label text-ink-muted uppercase focus-ring hover:text-ink"
                 >
                   {link.label}
                 </a>
@@ -50,7 +47,7 @@ function Navbar() {
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             onClick={() => setIsOpen((open) => !open)}
-            className="flex h-11 w-11 items-center justify-center rounded-sm border border-line-strong text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent md:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-sm border border-line-strong text-ink focus-ring md:hidden"
           >
             <svg
               aria-hidden="true"
@@ -73,7 +70,7 @@ function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block rounded-sm py-3 font-mono text-label text-ink-muted uppercase hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  className="block rounded-sm py-3 font-mono text-label text-ink-muted uppercase focus-ring hover:text-ink"
                 >
                   {link.label}
                 </a>
