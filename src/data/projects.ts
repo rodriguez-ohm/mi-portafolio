@@ -1,5 +1,7 @@
 import type { Project } from '../types/project'
 
+export const projectsTitle = 'Lo que he construido'
+
 export const projects: Project[] = [
   {
     title: 'Portafolio profesional',
