@@ -108,9 +108,13 @@ relacionados están dos elementos, menos espacio hay entre ellos.
 ## Decisiones por sección
 
 - **Habilidades:** tabla tipo hoja de especificaciones con las columnas
-  Categoría, Tecnología y Cómo la uso. Sin barras de nivel.
+  Tecnología y Cómo la uso; cada categoría es una fila de encabezado de
+  su grupo (en Figma era una columna a la izquierda), para que la tabla
+  funcione en 375 px. Sin barras de nivel.
 - **Contacto:** sin formulario. Correo destacado con botón para copiarlo
-  y enlaces a LinkedIn, GitHub y el CV.
+  y enlaces a LinkedIn, GitHub y el CV. La tarjeta del currículum usa la
+  etiqueta "CV" (en Figma, "CURRÍCULUM") para coincidir con el Footer:
+  ambos leen `label` de `socialLinks`.
 
 ## Diseños
 
