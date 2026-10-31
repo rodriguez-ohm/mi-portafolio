@@ -9,15 +9,18 @@ export const socialLinks: SocialLink[] = [
     label: 'LinkedIn',
     url: 'https://www.linkedin.com/in/isleni-rodriguez01',
     icon: '/icons/linkedin.svg',
+    detail: 'isleni-rodriguez01',
   },
   {
     label: 'GitHub',
     url: 'https://github.com/rodriguez-ohm',
     icon: '/icons/github.svg',
+    detail: '@rodriguez-ohm',
   },
   {
     label: 'CV',
     url: cvUrl,
     icon: '/icons/file.svg',
+    detail: 'Descargar PDF',
   },
 ]
