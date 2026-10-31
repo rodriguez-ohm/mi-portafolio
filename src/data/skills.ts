@@ -1,58 +1,85 @@
 import type { Skill } from '../types/skill'
+export const skillsTitle = 'Mi caja de herramientas'
+
+export const skillsIntro = 'Hoja de especificaciones: las herramientas que uso y para qué las uso.'
 
 export const skills: Skill[] = [
   {
     name: 'React',
     icon: '/icons/react.svg',
     category: 'Frontend',
-    usage: 'Construyo interfaces con componentes reutilizables y una sola responsabilidad.',
+    usage: 'Interfaces con componentes reutilizables',
   },
   {
     name: 'TypeScript',
     icon: '/icons/typescript.svg',
     category: 'Frontend',
-    usage: 'Tipo los datos y las props en modo estricto para detectar errores antes de ejecutar.',
+    usage: 'Tipado estricto, sin any',
+  },
+  {
+    name: 'JavaScript ES6+',
+    icon: '/icons/javascript.svg',
+    category: 'Frontend',
+    usage: 'Lógica e interactividad',
+  },
+  {
+    name: 'HTML semántico',
+    icon: '/icons/html5.svg',
+    category: 'Frontend',
+    usage: 'Estructura accesible para lectores de pantalla',
   },
   {
     name: 'Tailwind CSS',
     icon: '/icons/tailwindcss.svg',
     category: 'Frontend',
-    usage: 'Llevo un sistema de diseño a código con tokens de color, tipografía y espaciado.',
-  },
-  {
-    name: 'HTML y CSS',
-    icon: '/icons/html5.svg',
-    category: 'Frontend',
-    usage: 'Escribo HTML semántico y maquetas responsive con Flexbox y Grid.',
+    usage: 'Estilos a partir de un sistema de diseño',
   },
   {
     name: 'Git y GitHub',
     icon: '/icons/github.svg',
     category: 'Herramientas',
-    usage: 'Trabajo con ramas, commits convencionales, pull requests y tablero Kanban.',
+    usage: 'Ramas, pull requests y tablero Kanban',
   },
   {
     name: 'Vite',
     icon: '/icons/vite.svg',
     category: 'Herramientas',
-    usage: 'Desarrollo con recarga instantánea y genero builds optimizados para producción.',
+    usage: 'Entorno de desarrollo y build',
+  },
+  {
+    name: 'ESLint y Prettier',
+    icon: '/icons/eslint.svg',
+    category: 'Herramientas',
+    usage: 'Calidad y formato automático del código',
   },
   {
     name: 'Figma',
     icon: '/icons/figma.svg',
     category: 'Herramientas',
-    usage: 'Diseño la interfaz y su sistema de diseño antes de escribir código.',
+    usage: 'Bocetos y sistema de diseño',
   },
   {
-    name: 'Accesibilidad',
+    name: 'Vercel',
+    icon: '/icons/vercel.svg',
+    category: 'Herramientas',
+    usage: 'Despliegue continuo desde main',
+  },
+  {
+    name: 'Accesibilidad WCAG',
     icon: '/icons/accessibility.svg',
     category: 'Otras',
-    usage: 'Verifico contraste WCAG AA, navegación con teclado y textos alternativos.',
+    usage: 'Contraste AA y navegación con teclado',
   },
   {
-    name: 'Arduino',
-    icon: '/icons/arduino.svg',
+    name: 'Electrónica',
+    icon: '/icons/chip.svg',
     category: 'Otras',
-    usage: 'Programo microcontroladores y leo sensores, experiencia que traigo de la electrónica.',
+    usage: 'Diseño y depuración de circuitos',
+  },
+  {
+    name: 'Instrumentación',
+    icon: '/icons/oscilloscope.svg',
+    category: 'Otras',
+    usage: 'Medición y análisis de señales',
   },
 ]
